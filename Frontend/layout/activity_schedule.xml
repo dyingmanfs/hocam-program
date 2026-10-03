@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8F3F8">
+
+    <TextView
+        android:id="@+id/scheduleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#B00020"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/addSlotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Slot"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/filterDateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Date"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/clearFilterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Filter"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/slotContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>

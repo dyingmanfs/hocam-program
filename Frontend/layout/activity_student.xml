@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Panel"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnShowAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Student" />
+
+        <Button
+            android:id="@+id/btnShowDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Student"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnShowUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Student"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutAddStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Student"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Student ID"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Student Full Name"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Student Email"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Phone Number"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Status e.g. 12.Grade"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etReferenceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Reference Name (Optional)"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etPredictedHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Predicted Lesson Hours"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etHourlyWage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Hourly Wage"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etParentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Parent ID"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etSlotId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Slot ID to connect student"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnAddStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Student"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutDeleteStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Student"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a student from the list to delete."
+                android:textSize="15sp"
+                android:textColor="#444444"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/deleteStudentListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUpdateStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Student"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a student from the list. Then edit the information below."
+                android:textSize="15sp"
+                android:textColor="#444444"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/updateStudentListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Student Information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etUpdateStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Selected Student ID"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etUpdateFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Full Name"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etUpdateEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Email"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etUpdatePhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Phone Number"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etUpdateStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Status"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etUpdateReferenceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Reference Name (Optional)"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etUpdatePredictedHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Predicted Lesson Hours"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etUpdateHourlyWage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Hourly Wage"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUpdateParentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Parent ID"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnUpdateStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Student"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
